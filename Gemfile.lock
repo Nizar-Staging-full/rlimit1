@@ -1,19 +1,30 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    campaigning (0.15.0)
-      soap4r (~> 1.5.0)
-    httpclient (2.8.3)
-    soap4r (1.5.8)
-      httpclient (>= 2.1.1)
-    t-minus (0.2.2)
-      campaigning (>= 0.15.0)
+    bigdecimal (3.2.2)
+    createsend (0.3.2)
+      hashie (~> 1.0)
+      httparty (~> 0.7)
+      json
+    csv (3.3.5)
+    hashie (1.2.0)
+    httparty (0.23.1)
+      csv
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
+    json (2.13.2)
+    mini_mime (1.1.5)
+    multi_xml (0.7.2)
+      bigdecimal (~> 3.1)
+    t-minus (0.3.1)
+      createsend (~> 0.2)
 
 PLATFORMS
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
-  t-minus (= 0.2.2)
+  t-minus (= 0.3.1)
 
 BUNDLED WITH
    2.3.16
